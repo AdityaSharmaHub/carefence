@@ -9,29 +9,29 @@
 A web-based application for healthcare organizations to manage staff shift tracking with location-based clock-in/out functionality.
 
 ## 1. Core Features
-1. **User Authentication**
-   - Registration with email/password
-   - Google OAuth integration
-   - Role-based permissions
-   - Session management
+### 1.1 User Authentication
+- Registration with email/password
+- Google OAuth integration
+- Role-based permissions
+- Session management
 
-2. **Location Services**
-   - GPS location detection
-   - Geofencing for perimeter checking
-   - Location permission handling
-   - Fallback for location failures
+### 1.2 Location Services
+- GPS location detection
+- Geofencing for perimeter checking
+- Location permission handling
+- Fallback for location failures
 
-3. **Time Tracking**
-   - Clock in/out functionality
-   - Shift duration calculation
-   - Historical shift records
-   - Note attachment system
+### 1.3 Time Tracking
+- Clock in/out functionality
+- Shift duration calculation
+- Historical shift records
+- Note attachment system
 
-4. **Management Dashboard**
-   - Real-time staff status
-   - Analytics and reporting
-   - Location perimeter configuration
-   - Shift history views
+### 1.4 Management Dashboard
+- Real-time staff status
+- Analytics and reporting
+- Location perimeter configuration
+- Shift history views
 
 
 ## 2. Technical Architecture
