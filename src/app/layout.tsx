@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
+import "@ant-design/v5-patch-for-react-19";
+import { ConfigProvider } from "antd";
+import theme from "@/config/themeConfig";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-sans",
@@ -14,7 +18,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "CareFence - Safe Zone",
+  title: "CareFence - Healthcare Shift Management System",
   description: "Clock in within the safe zone",
 };
 
@@ -31,7 +35,11 @@ export default function RootLayout({
       <body
         className={`${ibmPlexSans.variable} ${ibmPlexSerif.variable} antialiased`}
       >
-        {children}
+        <ConfigProvider theme={theme}>
+          <AntdRegistry>
+            {children}
+          </AntdRegistry>
+        </ConfigProvider>
       </body>
     </html>
   );
