@@ -4,6 +4,7 @@
   --background: #F5F8FA;
   --foreground: #011516;
   --secondary: #00AFAA;
+  --header: #f5f8fa7d;
 }
 
 @theme inline {
@@ -19,6 +20,10 @@
     --foreground: #F5F8FA;
   }
 } */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--background);
