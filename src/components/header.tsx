@@ -6,7 +6,9 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className='sticky top-0 p-4 md:p-6 flex items-center justify-between bg-[var(--header)] backdrop-blur-lg border border-gray-200 z-10'>
+    <header className='sticky top-0 bg-[var(--header)] backdrop-blur-lg z-10 border-b border-gray-200'>
+        <div className='p-4 md:p-6 flex items-center justify-between max-w-7xl mx-auto'>
+
         {/* Logo */}
         <Link href="/">
             <Image src="/logo.svg" width={150} height={50} alt='CareFence logo' />
@@ -21,12 +23,16 @@ const Header = () => {
 
         {/* Navbtns */}
         <div className='flex gap-2'>
-            <Link href={"/auth/login"}>
-                <Button type="default" size="middle">Login</Button>
-            </Link>
-            <Link href={"/auth/login"} className='hidden md:flex'>
-                <Button type="primary" size="middle">Get started</Button>
-            </Link>
+            <a href={"/auth/login"}>
+                <Button type="default">Login</Button>
+            </a>
+            <a href={"/auth/login"} className='hidden md:flex'>
+                <Button type="primary">Get started</Button>
+            </a>
+            <a href="/auth/logout" className="underline">
+                <Button type="text">Logout</Button>
+            </a>
+        </div>
         </div>
     </header>
   )

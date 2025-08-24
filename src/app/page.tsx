@@ -56,10 +56,10 @@ export default function Home() {
       <Header />
 
       {/* Main Section */}
-      <section className="flex flex-col gap-6 items-center justify-center py-20 px-4 max-w-4xl mx-auto">
-        <h1 className="font-bold text-4xl md:text-6xl text-gray-900 text-center leading-12 md:leading-18">
+      <section className="flex flex-col gap-6 items-center justify-center py-16 md:py-24 px-4 max-w-4xl mx-auto">
+        <h1 className="font-bold text-4xl md:text-6xl text-gray-900 text-center md:leading-18">
           Healthcare Shift Management <br />
-          <span className="text-[var(--secondary)]">Made Simple</span>
+          <span className="text-[var(--secondary)] leading-12">Made Simple</span>
         </h1>
         <h2 className="font-semibold text-xl md:text-3xl italic text-gray-800">
           "Clock in within the safe zone"
@@ -69,11 +69,11 @@ export default function Home() {
           with location-based clock-in/out functionality.
         </p>
         <div className="flex gap-4 mt-4">
-          <Link href={"/auth/login"}>
-            <Button type="primary" size="large" className="w-[140px]">
+          <a href={"/auth/login"}>
+            <Button type="primary" size="large" className="w-[120px] md:w-[140px]">
               Get started
             </Button>
-          </Link>
+          </a>
           <Link href={"#features"}>
             <Button type="default" size="large" className="w-[140px]">
               How it works
@@ -85,7 +85,7 @@ export default function Home() {
       {/* Features Section */}
       <section
         id="features"
-        className="flex flex-col items-center justify-center py-20 px-6 max-w-7xl mx-auto"
+        className="flex flex-col items-center justify-center py-16 md:py-24 px-6 max-w-7xl mx-auto"
       >
         <h3 className="font-bold text-3xl md:text-4xl mb-12">Our Features</h3>
         <div className="grid md:grid-cols-3 gap-12">
@@ -107,7 +107,7 @@ export default function Home() {
       {/* How it works section */}
       <section
         id="how-it-works"
-        className="flex items-center flex-col justify-center max-w-7xl mx-auto py-20 px-6"
+        className="flex items-center flex-col justify-center max-w-7xl mx-auto py-16 md:py-24 px-6"
       >
         <h3 className="font-bold text-3xl md:text-4xl mb-12">How it Works</h3>
         <div className="grid md:grid-cols-3 gap-12">
