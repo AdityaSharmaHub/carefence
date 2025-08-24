@@ -4,9 +4,16 @@
 <div align="center">
   <i>"Clock in within the safe zone"</i>
 </div>
+<br />
+<div align="center">
+  <a href="https://carefence.vercel.app" target="_blank">carefence.vercel.app</a>
+</div>
 
-# CareFence - Healthcare Shift Management System
-A web-based application for healthcare organizations to manage staff shift tracking with location-based clock-in/out functionality.
+<div align="center"> 
+  <h1>Healthcare Shift Management System</h1>
+</div>
+
+<p>A web-based application for healthcare organizations to manage staff shift tracking with location-based clock-in/out functionality.</p>
 
 ## 1. Core Features
 ### 1.1 User Authentication
