@@ -1,11 +1,7 @@
-import { Card } from "antd";
+import React from "react";
 
-export default function DashboardPage() {
-  return (
-    <div className="p-8">
-      <Card title="Dashboard">
-        <p>Welcome! Manager / Care Worker features will come here.</p>
-      </Card>
-    </div>
-  );
-}
+const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+  return <div>{children}</div>;
+};
+
+export default DashboardLayout;
