@@ -6,7 +6,8 @@
 </div>
 <br />
 <div align="center">
-  <a href="https://carefence.vercel.app" target="_blank">carefence.vercel.app</a>
+  
+  [`carefence.vercel.app`](https://carefence.vercel.app)
 </div>
 
 <div align="center"> 
